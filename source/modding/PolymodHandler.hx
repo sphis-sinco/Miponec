@@ -1,9 +1,9 @@
 package modding;
 
-import events.FocusEvent;
-import events.StateSwitchEvent;
 import flixel.FlxG;
-import modules.ModuleHandler;
+import modding.events.FocusEvent;
+import modding.events.StateSwitchEvent;
+import modding.modules.ModuleHandler;
 import polymod.Polymod;
 import polymod.format.ParseRules;
 import utils.StateUtils;

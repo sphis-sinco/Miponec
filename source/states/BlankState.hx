@@ -1,10 +1,10 @@
 package states;
 
-import events.CreateEvent;
-import events.UpdateEvent;
 import flixel.FlxG;
 import flixel.FlxState;
-import modules.ModuleHandler;
+import modding.events.CreateEvent;
+import modding.events.UpdateEvent;
+import modding.modules.ModuleHandler;
 
 class BlankState extends FlxState
 {

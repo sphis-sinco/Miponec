@@ -1,6 +1,6 @@
-package events;
+package modding.events;
 
-import modules.ModuleEvent;
+import modding.modules.ModuleEvent;
 
 class CreateEvent extends ModuleEvent
 {

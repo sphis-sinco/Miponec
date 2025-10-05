@@ -1,7 +1,7 @@
-package events;
+package modding.events;
 
-import modules.Module;
-import modules.ModuleEvent;
+import modding.modules.Module;
+import modding.modules.ModuleEvent;
 
 class UpdateEvent extends ModuleEvent
 {
