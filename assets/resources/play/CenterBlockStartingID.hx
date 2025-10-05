@@ -1,5 +1,4 @@
 import modding.events.CreateEvent;
-import modding.events.StateSwitchEvent;
 import modding.modules.Module;
 import states.play.PlayState;
 
@@ -15,10 +14,6 @@ class CenterBlockStartingID extends Module
 		super.onCreate(event);
 
 		if (event.state == 'PlayState')
-		{
-			trace('Setting CenterBlockStartingID');
-
 			PlayState.instance.centerBlock_id = 'wood';
-		}
 	}
 }
