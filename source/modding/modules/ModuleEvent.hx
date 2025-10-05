@@ -1,14 +1,18 @@
 package modding.modules;
 
-class ModuleEvent
+import modding.events.StateEvent;
+
+class ModuleEvent extends StateEvent
 {
 	public var module:Module;
 
-	public function new(module:Module)
+	public function new(module:Module, state:String)
 	{
+		super(state);
+
 		this.module = module;
 	}
         
-	public function toString():String
-		return 'ModuleEvent(module: $module)';
+	override public function toString():String
+		return 'ModuleEvent(module: $module, state: $state)';
 }
