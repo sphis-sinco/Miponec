@@ -29,11 +29,11 @@
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 
-	<set name="BUILD_DIR" value="export" />
+	<set name="BUILD_DIR" value="export/debug" if="debug" />
+	<set name="BUILD_DIR" value="export/release" unless="debug"/>
 
 	<source path="source" />
-	<assets path="assets" exclude="assets/scripts/tests/" unless="TEST_SCRIPTS"/>
-	<assets path="assets" if="TEST_SCRIPTS"/>
+	<assets path="assets"/>
 	<assets path="mods" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
@@ -52,7 +52,7 @@
 		<!-- Which asset library to use for scripts. -->
 		<haxedef name="POLYMOD_SCRIPT_LIBRARY" value="scripts" />
 		<!-- The base path from which scripts should be accessed. -->
-		<haxedef name="POLYMOD_ROOT_PATH" value="scripts/" />
+		<haxedef name="POLYMOD_ROOT_PATH" value="" />
 		<!-- Determines the subdirectory of the mod folder used for file appending. -->
 		<haxedef name="POLYMOD_APPEND_FOLDER" value="_append" />
 		<!-- Determines the subdirectory of the mod folder used for file merges. -->
