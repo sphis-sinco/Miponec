@@ -1,4 +1,4 @@
-package states.play.objects;
+package states.play.components;
 
 import polymod.hscript.HScriptedClass;
 
