@@ -8,6 +8,7 @@ import polymod.Polymod;
 import polymod.format.ParseRules;
 import polymod.fs.ZipFileSystem;
 import states.*;
+import states.play.PlayState;
 import utils.StateUtils;
 #if sys
 import sys.FileSystem;
@@ -53,6 +54,8 @@ class PolymodHandler
 	{
 		Polymod.addDefaultImport(BlankState);
 		Polymod.addDefaultImport(ModuleState);
+		Polymod.addDefaultImport(PlayState);
+		Polymod.addDefaultImport(InitState);
 	}
 
 	public static function buildParseRules():polymod.format.ParseRules
