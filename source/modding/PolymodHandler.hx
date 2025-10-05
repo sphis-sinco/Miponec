@@ -7,7 +7,7 @@ import modding.events.FocusEvent;
 import modding.modules.*;
 import polymod.Polymod;
 import polymod.format.ParseRules;
-import states.BlankState;
+import states.*;
 import utils.StateUtils;
 #if sys
 import sys.FileSystem;
@@ -49,6 +49,7 @@ class PolymodHandler
 	public static function addImports()
 	{
 		Polymod.addDefaultImport(BlankState);
+		Polymod.addDefaultImport(ModuleState);
 	}
 
 	public static function buildParseRules():polymod.format.ParseRules
